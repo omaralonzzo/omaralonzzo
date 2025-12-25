@@ -1,0 +1,192 @@
+---
+import MainLayout from "@/layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+---
+
+<MainLayout title="About Omar | Omar Alonzzo">
+  <section class="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
+    
+    <!-- Hero Section -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-5xl">
+        About Omar
+      </h1>
+      <p class="mt-4 text-xl text-neutral-600 dark:text-neutral-400">
+        CEO & Growth Strategist
+      </p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="prose prose-lg dark:prose-invert max-w-none">
+      
+      <p class="text-xl leading-relaxed">
+        I'm <strong>Omar Alonzzo</strong>, CEO of Nortia Global LLC and founder of Fuxion Studio, 
+        a premium creative agency based in Miami. With over 11 years of experience, I've had the 
+        privilege of working with Fortune 500 brands including Nestlé, Four Seasons, FIAT, and 
+        Mandarin Oriental across 7 countries.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-12 mb-4">What I Do</h2>
+      
+      <p>
+        I help entrepreneurs and businesses build powerful personal brands that command authority 
+        in their markets. My approach combines behavioral economics, neuroscience-based marketing, 
+        and Fortune 500 methodologies to deliver exponential results.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-12 mb-4">Recognition</h2>
+      
+      <p>
+        Featured photographer for <strong>Ocean Drive Magazine</strong> and <strong>Hola Magazine</strong>, 
+        combining strategic business expertise with creative artistry. Host of the 
+        <strong>ELEVA Podcast</strong> with over 1 million views.
+      </p>
+
+      <h2 class="text-2xl font-bold mt-12 mb-4">My Philosophy</h2>
+      
+      <p>
+        I believe in exponential growth, systematic excellence, and delivering premium experiences. 
+        Every strategy I create is designed to be scalable, measurable, and built for 10X results.
+      </p>
+
+      <!-- CTA -->
+      <div class="mt-16 text-center">
+        <a 
+          href="/contact" 
+          class="inline-flex items-center justify-center rounded-lg bg-orange-500 px-8 py-4 text-lg font-semibold text-white hover:bg-orange-600 transition-colors"
+        >
+          Let's Work Together
+        </a>
+      </div>
+
+    </div>
+  </section>
+</MainLayout>
+```
+
+---
+
+## PASO 2: Crear Página EVENTS
+
+**En GitHub:**
+```
+1. Ve a: src/pages/
+2. Click "Add file" → "Create new file"
+3. En el nombre escribe: events.astro
+4. Copia el código de abajo
+5. Click "Commit changes"---
+import MainLayout from "@/layouts/MainLayout.astro";
+---
+
+<MainLayout title="Events | Omar Alonzzo">
+  <section class="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+    
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <h1 class="text-4xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-5xl">
+        Events
+      </h1>
+      <p class="mt-4 text-xl text-neutral-600 dark:text-neutral-400">
+        Join me at upcoming events and experiences
+      </p>
+    </div>
+
+    <!-- Featured Event -->
+    <div class="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 md:p-12 text-white mb-12">
+      <span class="inline-block bg-white/20 rounded-full px-4 py-1 text-sm font-semibold mb-4">
+        UPCOMING
+      </span>
+      <h2 class="text-3xl md:text-4xl font-bold mb-4">
+        World Meditation Day Miami
+      </h2>
+      <p class="text-xl mb-2">December 21, 2025 • Miami, FL</p>
+      <p class="text-lg opacity-90 mb-8">
+        Join us for a transformative experience. Preview event for the 2026 Guinness World Record attempt.
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-flex items-center justify-center rounded-lg bg-white px-8 py-4 text-lg font-semibold text-orange-600 hover:bg-neutral-100 transition-colors"
+      >
+        Register Now
+      </a>
+    </div>
+
+    <!-- Events Grid -->
+    <h3 class="text-2xl font-bold mb-8 text-neutral-800 dark:text-neutral-200">
+      All Events
+    </h3>
+    
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Event Card 1 -->
+      <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden">
+        <div class="p-6">
+          <span class="inline-block bg-green-100 text-green-800 rounded-full px-3 py-1 text-sm font-semibold mb-4">
+            UPCOMING
+          </span>
+          <h4 class="text-xl font-bold text-neutral-800 dark:text-neutral-200">
+            World Meditation Day Miami
+          </h4>
+          <p class="text-neutral-600 dark:text-neutral-400 mt-2">
+            December 21, 2025
+          </p>
+          <p class="text-neutral-600 dark:text-neutral-400 mt-4">
+            A transformative meditation experience in the heart of Miami.
+          </p>
+          <a href="/contact" class="inline-block mt-4 text-orange-500 font-semibold hover:text-orange-600">
+            Learn More →
+          </a>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="bg-white dark:bg-neutral-800 rounded-xl shadow-lg overflow-hidden">
+        <div class="p-6">
+          <span class="inline-block bg-orange-100 text-orange-800 rounded-full px-3 py-1 text-sm font-semibold mb-4">
+            WORKSHOP
+          </span>
+          <h4 class="text-xl font-bold text-neutral-800 dark:text-neutral-200">
+            Celebrity Status Accelerator Workshop
+          </h4>
+          <p class="text-neutral-600 dark:text-neutral-400 mt-2">
+            Coming Q1 2026
+          </p>
+          <p class="text-neutral-600 dark:text-neutral-400 mt-4">
+            Intensive personal branding transformation for entrepreneurs.
+          </p>
+          <a href="/contact" class="inline-block mt-4 text-orange-500 font-semibold hover:text-orange-600">
+            Get Notified →
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CTA Section -->
+    <div class="mt-16 text-center bg-neutral-100 dark:bg-neutral-800 rounded-2xl p-8">
+      <h3 class="text-2xl font-bold text-neutral-800 dark:text-neutral-200 mb-4">
+        Want to Book Omar for Your Event?
+      </h3>
+      <p class="text-neutral-600 dark:text-neutral-400 mb-6">
+        Speaking engagements, workshops, and private consulting available.
+      </p>
+      <a 
+        href="/contact" 
+        class="inline-flex items-center justify-center rounded-lg bg-orange-500 px-8 py-4 text-lg font-semibold text-white hover:bg-orange-600 transition-colors"
+      >
+        Contact for Booking
+      </a>
+    </div>
+
+  </section>
+</MainLayout>
+```
+
+---
+
+## PASO 3: Verificar
+
+Después de crear ambos archivos, espera 1-2 minutos y visita:
+```
+tu-sitio.vercel.app/about
+tu-sitio.vercel.app/eventss
